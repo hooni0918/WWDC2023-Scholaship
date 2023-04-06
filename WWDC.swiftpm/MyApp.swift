@@ -4,7 +4,7 @@ import SwiftUI
 struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().previewDevice(PreviewDevice(rawValue: "iPhone14 pro")).previewInterfaceOrientation(.portrait)
         }
     }
 }
