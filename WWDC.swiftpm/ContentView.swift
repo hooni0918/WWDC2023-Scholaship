@@ -16,5 +16,3 @@ struct ContentView_Previews: PreviewProvider {
        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 13")).previewInterfaceOrientation(.portrait)
    }
 }
-
-//Please read the README file to know the background of this app 😊

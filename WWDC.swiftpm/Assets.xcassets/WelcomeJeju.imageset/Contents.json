@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "welcomeLogo.jpg",
+      "filename" : "WelcomeJeju.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "welcomeLogo 1.jpg",
+      "filename" : "WelcomeJeju 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "welcomeLogo 2.jpg",
+      "filename" : "WelcomeJeju 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
