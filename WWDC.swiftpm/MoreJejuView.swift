@@ -38,9 +38,9 @@ struct MoreJejuView: View {
                     
                     ZStack() {
                         Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                            .frame(width: 315, height: 500, alignment:  .center)
+                            .foregroundColor(Color(hue: 0.132, saturation: 0.231, brightness: 0.963))
+                            .cornerRadius(12)
+                            .frame(width: 950, height: 500, alignment:  .center)
                         VStack{
                                 Image(myJeju[self.index].img)
                                     .resizable()
@@ -48,11 +48,13 @@ struct MoreJejuView: View {
                                     .frame(width: 280, height: 220, alignment: .center)
                                     .padding(.top, 30)
                                 Text(myJeju[self.index].engProverb)
-                                    .font(.system(size: 20))
+                                .font(.title)
                                     .fontWeight(.bold)
                                 Text(myJeju[self.index].meaning)
-                                    .font(.system(size: 14))
-                                    .padding(.horizontal, 40)
+                                .font(.title3)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.leading)
+                                .padding(.horizontal, 40)
                                     .padding(.top, 5)
                                     .padding(.bottom, 30)
                                     .lineLimit(20)
@@ -107,7 +109,7 @@ struct MoreJejuView: View {
                 }
             }.navigationBarTitle("", displayMode: .inline)
         } else {
-          //  FlashcardFinalView()
+            exam()
         }
     }
 }

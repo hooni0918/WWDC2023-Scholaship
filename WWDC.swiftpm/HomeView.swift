@@ -18,7 +18,7 @@ struct HomeView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 350, maxHeight: 350, alignment: .center)
                 
-                NavigationLink(destination: MoreJejuView()){
+                NavigationLink(destination: InfoJeju()){
                     ZStack{
                         Text("Learn Jeju")
                             .font(.system(size: 20))

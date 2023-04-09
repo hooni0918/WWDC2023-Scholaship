@@ -16,10 +16,10 @@ struct LearnJejuModel  {
 
 var myJeju : [LearnJejuModel] = [
     LearnJejuModel(
-        KoreanProverb: "첫번쨰 인덱스",
+        KoreanProverb: "Proverbs related to haenyeo",
         img: "Haenyeo",
-        engProverb: "첫번쨰",
-        meaning: "The Krong Bade house is one of the almost extinct Indonesian cultures. This house has a front staircase that is used for guests or living people to enter the house."
+        engProverb: "Do You Know Haenyeo?",
+        meaning: "On Jeju Island, there are female divers called \"haenyeo\" who dive as deep as 10 meters without using oxygen masks to harvest seafood such as abalone and sea urchins for their livelihoods. These women, some of whom are in their 80s, hold an incredible knowledge of the sea and its inhabitants. When diving, they hold their breath for up to a minute at a time, and can spend up to seven hours a day and 90 days a year in the water.\n\nThe haenyeo have contributed to the elevation of women's status within their community and their ecologically friendly fishing practices and community-led management have increased sustainability."
         ),
     LearnJejuModel(
         KoreanProverb: "바다 속에서는 날 즐겁게 하고, 어둡고 궂은 곳에서는 날 괴롭힌다",

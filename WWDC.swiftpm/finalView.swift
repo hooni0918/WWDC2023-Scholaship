@@ -1,20 +1,20 @@
 //
-//  SwiftUIView.swift
+//  finalView.swift
 //  WWDC
 //
-//  Created by 이지훈 on 2023/04/08.
+//  Created by 이지훈 on 2023/04/09.
 //
 
 import SwiftUI
 
-struct NewView: View {
+struct finalView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct NewView_Previews: PreviewProvider {
+struct finalView_Previews: PreviewProvider {
     static var previews: some View {
-        NewView()
+        finalView()
     }
 }
