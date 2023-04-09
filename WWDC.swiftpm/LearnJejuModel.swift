@@ -16,6 +16,12 @@ struct LearnJejuModel  {
 
 var myJeju : [LearnJejuModel] = [
     LearnJejuModel(
+        KoreanProverb: "첫번쨰 인덱스",
+        img: "Haenyeo",
+        engProverb: "첫번쨰",
+        meaning: "The Krong Bade house is one of the almost extinct Indonesian cultures. This house has a front staircase that is used for guests or living people to enter the house."
+        ),
+    LearnJejuModel(
         KoreanProverb: "바다 속에서는 날 즐겁게 하고, 어둡고 궂은 곳에서는 날 괴롭힌다",
         img: "Haenyeo",
         engProverb: "Underwater brings me joy, but in dark and gloomy places it tortures me.",
@@ -45,7 +51,13 @@ var myJeju : [LearnJejuModel] = [
         engProverb: "The waves are eroding the beach at sunset",
         meaning: "One must dive with a knife under the water. The names of the lunar calendar days that indicate the degree of salinity of seawater are numerous. 'Hanmul' refers to the 10th and 25th days of each lunar month when the water is deep and not suitable for collecting shellfish. To collect abalone or conch, divers must hold their breath, brace their hand holding a sharp tool called a 'bichang' against their chest, and struggle underwater. This is when they face great difficulties."
         ),
-    //MARK: 말
+    //MARK: 말 6번째
+    LearnJejuModel(
+        KoreanProverb: "두번째",
+        img: "horse",
+        engProverb: "두번째t",
+        meaning: "두번째"
+        ),
     LearnJejuModel(
         KoreanProverb: "말은 나면 제주도로 보내고 사람은 나면 서울로 보내라",
         img: "horse",
@@ -64,7 +76,13 @@ var myJeju : [LearnJejuModel] = [
                 engProverb: "Even horse leather is stiff in March and April.",
                 meaning: "Horse leather is also stiff in March and April. The lunar months of March and April are a vibrant spring season when everything is coming back to life. Although it is a good time period, in the past, it corresponded with the time of the year when animals were not getting enough food due to the spring growth spurt. As a result, both humans and livestock lost weight and vitality. This is symbolized by even the soft leather of a horse becoming so stiff that it is difficult to handle due to the severe living conditions."
                 ),
-    //MARK: 더불어 사는 삶
+    //MARK: 더불어 사는 삶 10번째
+    LearnJejuModel(
+                KoreanProverb: "세번째",
+                img: "WeJeju",
+                engProverb: "3번쨰",
+                meaning: "3번쨰"
+                ),
     LearnJejuModel(
                 KoreanProverb: "도독은 들민 심지 말앙 다울려 불라.",
                 img: "WeJeju",
@@ -96,7 +114,14 @@ var myJeju : [LearnJejuModel] = [
                 meaning: "Share evenly on top, and a little less below. Sometimes it can be difficult to determine how to distribute what needs to be divided among each person fairly. Even distribution is ideal to prevent any complaints or grievances, but if the quantity is limited, a set standard must be established to divide it. In such cases, although there may be some distinction made based on age between elders and young children, the share that goes to the elders should be evenly distributed, regardless of whether the amount is more or less. And for those below, the share should be distributed evenly, even if it is just a little."
                 ),
     
-    //MARK: 농사
+    //MARK: 농사 16번쨰
+    LearnJejuModel(
+                KoreanProverb: "네번째",
+                img: "orchard",
+                engProverb: "4.",
+                meaning: "The saying goes, \"If there's no rain during the 'a little bit' days, wait until the 'pouring' days.\" The \"a little bit\" days refer to the 8th and 23rd days of the lunar calendar when it tends to rain more frequently. In the past, people believed that if it didn't rain on those days, it would rain on the \"pouring\" days, which are the 12th and 27th days of the lunar calendar, when it's more likely to rain due to the weather conditions."
+
+                ),
     LearnJejuModel(
                 KoreanProverb: "유름터엔 다음 물찌에도 싯나.",
                 img: "orchard",

@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct HomeView: View {
@@ -6,11 +5,12 @@ struct HomeView: View {
         ZStack {
             Color(red: 0.97, green: 0.88, blue: 0.71, opacity: 1.00).edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Do you know Jeju island?")
+                Text("Do you know \nJeju island?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    .lineLimit(nil)
+                    .lineLimit(2)
+                    .lineSpacing(5)
                 
                 
                 Image("WelcomeJeju")
@@ -29,7 +29,7 @@ struct HomeView: View {
                             .cornerRadius(8)
                             .padding(.bottom,5)
                     }
-                    //  NavigationLink(destination: QuizView())
+                    //  NavigationLink(destination: QuizView()){
                     ZStack{
                         Text("Jeju Quiz")
                             .font(.system(size: 20))
@@ -49,7 +49,7 @@ struct HomeView: View {
 }
 struct HomeView_Previews: PreviewProvider {
    static var previews: some View {
-       HomeView().previewDevice("iPhone 14 Pro").previewDevice(PreviewDevice(rawValue: "iPhone 13")).previewInterfaceOrientation(.portrait)
+       HomeView().previewDevice("iPad pro").previewDevice(PreviewDevice(rawValue: "iPhone 13")).previewInterfaceOrientation(.portrait)
        
    }
 }
