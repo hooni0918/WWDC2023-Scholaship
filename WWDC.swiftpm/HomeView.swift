@@ -29,16 +29,17 @@ struct HomeView: View {
                             .cornerRadius(8)
                             .padding(.bottom,5)
                     }
-                    //  NavigationLink(destination: QuizView()){
-                    ZStack{
-                        Text("Jeju Quiz")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .frame(width:280.0, height: 50.0)
-                            .background(Color(hue: 0.2, saturation: 1.0, brightness: 0.898))
-                            .cornerRadius(8)
-                            .padding(.bottom,5)
+                    NavigationLink(destination: JejuQuizView()){
+                        ZStack{
+                            Text("Jeju Quiz")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(width:280.0, height: 50.0)
+                                .background(Color(hue: 0.2, saturation: 1.0, brightness: 0.898))
+                                .cornerRadius(8)
+                                .padding(.bottom,5)
+                        }
                     }
                 }
             }

@@ -109,7 +109,7 @@ struct MoreJejuView: View {
                 }
             }.navigationBarTitle("", displayMode: .inline)
         } else {
-            exam()
+            finalView()
         }
     }
 }
