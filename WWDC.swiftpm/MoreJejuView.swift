@@ -15,40 +15,16 @@ struct MoreJejuView: View {
     var body: some View {
         if (index < myJeju.count) {
             
-            if index == 0 || index == 7 || index == 12 || index == 17 {
-                
-//                Button(action: {
-//                    if index < 17 {
-//                        self.index = self.index + 1
-//                    }
-//                }) {
-//                    Text("Next >")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.bold)
-//                        .foregroundColor(.white)
-//                        .padding()
-//                        .padding(.horizontal)
-//                        .frame(minWidth:150, maxHeight: 50)
-//                }
-//                .background(Color.blue)
-//                .cornerRadius(8)
-//            } else {
-////                Button(action: {
-////                    if index < myJeju.count - 1 {
-////                        self.index += 1
-////                    }
-////                }) {
-////                    Text("Next >")
-////                        .font(.system(size: 15))
-////                        .fontWeight(.bold)
-////                        .foregroundColor(.white)
-////                        .padding()
-////                        .padding(.horizontal)
-////                        .frame(minWidth:150, maxHeight: 50)
-////                }
-////                .background(Color.blue)
-////                .cornerRadius(8)
+            if index == 0 {
+                // do something
+            } else if index == 7 {
+                // do something
+            } else if index == 12 {
+                // do something
+            } else if index == 17 {
+                // do something
             }
+
 
                 ZStack {
                     Color(red: 0.97, green: 0.91, blue: 0.84, opacity: 1.00).edgesIgnoringSafeArea(.all)
@@ -70,6 +46,7 @@ struct MoreJejuView: View {
                             //                            .font(.system(size: 15))
                             //                            .padding(.horizontal, 40)
                         }
+                        
                         
                         ZStack() {
                             Rectangle()
@@ -120,7 +97,7 @@ struct MoreJejuView: View {
                             .disabled(index == 0)
                             
                             Button(action: {
-                                if index < 10 {
+                                if index < myJeju.count - 1 {
                                     self.index = self.index + 1
                                 } else {
                                     
