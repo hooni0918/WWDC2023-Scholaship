@@ -53,10 +53,10 @@ var myJeju : [LearnJejuModel] = [
         ),
     //MARK: 말 6번째
     LearnJejuModel(
-        KoreanProverb: "두번째",
+        KoreanProverb: "Horses are famous in Jeju Island",
         img: "horse",
-        engProverb: "두번째t",
-        meaning: "두번째"
+        engProverb: "Learn some proverb related to horses.",
+        meaning: "Jeju Island has extensive grasslands and pastures and has been known for raising horses since ancient times. Horses played an important role as military horses and were also used for transportation and farming, possessing significant economic value as livestock. Now, they are designated as natural monuments and are managed due to industrial development, and are utilized as racehorses and riding horses for tourists."
         ),
     LearnJejuModel(
         KoreanProverb: "말은 나면 제주도로 보내고 사람은 나면 서울로 보내라",
@@ -78,10 +78,10 @@ var myJeju : [LearnJejuModel] = [
                 ),
     //MARK: 더불어 사는 삶 10번째
     LearnJejuModel(
-                KoreanProverb: "세번째",
+                KoreanProverb: "Culture and Environment of Jeju Island",
                 img: "WeJeju",
-                engProverb: "3번쨰",
-                meaning: "3번쨰"
+                engProverb: "Learn some proverb related to horse",
+                meaning: "In Jeju Island, traditional environment and culture of Korea are well-preserved and the local proverbs reflect their unique way of life and culture. Would you like to learn some interesting proverbs that showcase their traditions and culture?"
                 ),
     LearnJejuModel(
                 KoreanProverb: "도독은 들민 심지 말앙 다울려 불라.",
