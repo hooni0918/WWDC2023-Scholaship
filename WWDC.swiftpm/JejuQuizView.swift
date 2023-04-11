@@ -20,7 +20,7 @@ struct JejuQuizView: View {
     
     
     var body: some View {
-        VStack(spacing:40) {
+        VStack(spacing:200) {
             if (self.index < myQuiz.count){
                 HStack {
                     Text("Quiz")
@@ -32,18 +32,18 @@ struct JejuQuizView: View {
                         .font(.system(size: 15))
                         .padding(.horizontal)
                 }
-                //   ProgressBar(progress: CGFloat(getProgress()))
-                
+                //ProgressBar(progress: CGFloat(getProgress()))
+              
                 VStack(spacing: 20){
                     //Question
                     Image(myQuiz[self.index].img)
                         .resizable()
-                        .frame(width: 250, height: 180, alignment: .center)
+                        .frame(width: 500, height: 400, alignment: .center)
                     Text(myQuiz[self.index].text)
-                        .font(.system(size: 20))
+                        .font(.system(size: 25))
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
-                        .frame(width:350, height: 80, alignment: .leading)
+                        .frame(width:550, height: 80, alignment: .leading)
                     
                     //Answer 0
                     Button(action: {
@@ -89,20 +89,6 @@ struct JejuQuizView: View {
                         
                     }
                     
-                    //Answer 3
-                    Button(action: {
-                        self.isSelected.toggle()
-                        self.buttonAction(n: 3)
-                    }) {
-                        Text(myQuiz[self.index].answer[3])
-                            .foregroundColor(.black)
-                            .font(.system(size: 20))
-                            .padding()
-                            .padding(.horizontal)
-                            .frame(minWidth:350, maxHeight: 50, alignment: .leading)
-                            .background(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 2))
-                        
-                    }
                     
                     Text(textBelow)
                         .padding(.top, 15)
@@ -118,49 +104,44 @@ struct JejuQuizView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 0.97, green: 0.91, blue: 0.84, opacity: 1.00))
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+        .background( Color(red: 0.97, green: 0.91, blue: 0.84, opacity: 1.00))
+        //.navigationBarHidden(true)
+       // .navigationBarBackButtonHidden(true)
         
     }
     
-    //action of the buttons
+    //맞고 틀리는 로직
     //n = answer [0,1,2,3]
     func buttonAction(n : Int){
         isCorrect = myQuiz[self.index].correct == n
         //if answer is correct increment score
         if(isCorrect) {
             self.score = self.score + 1
-            // self.playSound(key: "correctAudio")
+            self.playSound(key: "correctAudio")
             textBelow = "Your current score is : \(score)"
             //go to next question
             self.index = self.index + 1
         } else {
-            //self.playSound(key: "wrongAudio")
-            textBelow = "That's not the correct answer 🤔"
+            self.playSound(key: "wrongAudio")
+            textBelow = "Give it another thought."
         }
     }
-}
-//    func playSound(key: String) {
-//        let url = Bundle.main.url(forResource: key, withExtension: "mp3")
-//
-//        //do nothing if url is empty
-//        guard url != nil else {
-//            return
-//        }
-//
-//        do {
-//            player = try AVAudioPlayer(contentsOf: url!)
-//            player?.play()
-//        } catch {
-//            print("error")
-//        }
-//    }
     
-//    func getProgress() -> Float {
-//        let progress = CGFloat(Double((index + 1)) / Double(10) * 350)
-//        return Float(progress)
-//    }
+    func playSound(key: String) {
+        let url = Bundle.main.url(forResource: key, withExtension: "mp3")
+        
+        //do nothing if url is empty
+        guard url != nil else {
+            return
+        }
+        
+    }
+    
+    func getProgress() -> Float {
+        let progress = CGFloat(Double((index + 1)) / Double(10) * 350)
+        return Float(progress)
+    }
+}
 
 
 struct JejuQuizView_Previews: PreviewProvider {

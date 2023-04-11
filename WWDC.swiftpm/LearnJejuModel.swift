@@ -116,10 +116,10 @@ var myJeju : [LearnJejuModel] = [
     
     //MARK: 농사 16번쨰
     LearnJejuModel(
-                KoreanProverb: "네번째",
+                KoreanProverb: "Orchards in Jeju Island",
                 img: "orchard",
-                engProverb: "4.",
-                meaning: "The saying goes, \"If there's no rain during the 'a little bit' days, wait until the 'pouring' days.\" The \"a little bit\" days refer to the 8th and 23rd days of the lunar calendar when it tends to rain more frequently. In the past, people believed that if it didn't rain on those days, it would rain on the \"pouring\" days, which are the 12th and 27th days of the lunar calendar, when it's more likely to rain due to the weather conditions."
+                engProverb: "Learn some proverb related to orchard",
+                meaning: "Jeju Island has a clean climate with mild winters and relatively consistent rainfall throughout the year, and compared to other regions, its winters are short and summers are long, making it suitable for cultivating a variety of fruits thanks to its favorable soil conditions. Among them, representative fruits include Hallabong oranges, tangerines, strawberries, and Cheonhyehyang pears, and especially Hallabong oranges are famous as they are only produced in Jeju Island. Would you like to learn some proverbs related to farming and agriculture in Jeju Island?"
 
                 ),
     LearnJejuModel(
