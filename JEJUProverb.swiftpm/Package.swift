@@ -8,19 +8,19 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "WWDC",
+    name: "",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "WWDC",
+            name: "",
             targets: ["AppModule"],
             bundleIdentifier: "yizi.com.WWDC",
             teamIdentifier: "D2DRA3F792",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .movieReel),
+            appIcon: .placeholder(icon: .binoculars),
             accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
                 .pad,

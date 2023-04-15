@@ -1,9 +1,3 @@
-//
-//  SwiftUIView.swift
-//  WWDC
-//
-//  Created by 이지훈 on 2023/04/08.
-//
 
 import SwiftUI
 

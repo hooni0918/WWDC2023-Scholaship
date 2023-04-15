@@ -1,10 +1,3 @@
-//
-//  JejuQuizModel.swift
-//  WWDC
-//
-//  Created by 이지훈 on 2023/04/09.
-//
-
 import SwiftUI
 struct QuizModel  {
     var img : String
@@ -83,11 +76,3 @@ func LoadScore (quiz : String) -> Int{
         return UserDefaults.standard.integer(forKey: quiz)
 }
 
-
-
-/*
- 안녕하십니까 현재 컴퓨터공학전공 3학년1학기 수강중인 20191541 이지훈 입니다.
-다름이 아니라 현재 저는 현재 swift언어를 통해 iOS를 공부하는중입니다. 그러던 와중 애플애서 해커톤 형식으로 진행하는 Swift Student Challenge가 있다는 소식을 듣고 해당 챌린지에 제 도전작을 제출하려합니다.
- 그러나 이 챌린지에 앱을 제출하려면 학생임을 공증할 수 있는 교육감독관(지도교수,교장,학장 등등)의 연락처가 필요하다고 하여 연락드립니다. 해당 챌린지를 제출하기 위해서 교수님의 연락처를 함께 제출하여도 될까요?
-
- */

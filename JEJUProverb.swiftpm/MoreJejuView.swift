@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  WWDC
-//
-//  Created by 이지훈 on 2023/04/06.
-//
-//데이터 저장하고 넘어오기
 
 import SwiftUI
 
@@ -33,10 +26,7 @@ struct MoreJejuView: View {
                             .font(.system(size: 30))
                             .fontWeight(.bold)
                             .padding(.horizontal, 40)
-//                        Text("")
-//                            .font(.system(size: 15))
-//                            .padding(.horizontal, 40)
-                    }
+                     }
                     
                     
                     ZStack() {
@@ -62,14 +52,10 @@ struct MoreJejuView: View {
                                     .padding(.bottom, 30)
                                     .lineLimit(20)
                             }
-//                            else if self.index == 1 {
-//                                NewView()
-//                                    .frame(width: 20, height: 20, alignment: .center)
-//                                                  .padding(.top, 30)
-//                            }
+                            
                             }
                     
-                    //button next
+                    //button 
                     HStack (alignment:.center) {
                         Button(action: {
                             if index < 34 {
